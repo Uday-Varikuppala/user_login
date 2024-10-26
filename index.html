@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="getAll()">
+    <div class="center">
+        <h1>USER LOGIN</h1>
+
+        <!-- User Form Section -->
+        <div class="form-container">
+            <table>
+                <tr>
+                    <td>USERNAME</td>
+                    <td><input type="text" id="loginname" /></td>
+                </tr>
+                <tr>
+                    <td>PASSWORD</td>
+                    <td><input type="password" id="password" /></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="button-group">
+                        <input type="button" onclick="save()" value="Save">
+                        <input type="button" onclick="update()" value="Update">
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- User List Section -->
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Login Name</th>
+                        <th>Password</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="userTableBody">
+                    <!-- Dynamically populated rows will appear here -->
+                </tbody>                
+            </table>
+        </div>
+    </div>
+</body>
+</html>

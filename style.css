@@ -1,0 +1,159 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #076F72; /* Teal-green background */
+    color: #fff;
+    background: linear-gradient(90deg, #076F72 100%); /* Split teal-green and mustard yellow */
+}
+
+
+/* Title Styling */
+h1 {
+    font-family: 'Poppins', sans-serif; /* Modern and stylish font */
+    font-size: 4em; /* Large font size for a bold, modern feel */
+    color: #c01c1ce8; /* Modern red tone */
+    background: linear-gradient(55deg, #04006c, #04006c); /* Gradient text */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* Apply gradient to text */
+    text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    letter-spacing: 2px; /* Slight spacing for a sleek appearance */
+    margin-bottom: 20px;
+    font-weight: 
+}
+
+
+/* Main Container Styling */
+.center {
+    width: 80%;
+    max-width: 600px;
+    background-color: #F4B942; /* Mustard yellow background for login form */
+    padding: 2em;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    margin: auto;
+}
+
+/* Form Container Styling */
+.form-container, .table-container {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #fff; /* White background for form */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(219, 5, 5, 0.1);
+    border-radius: 5px;
+    
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    font-size: 1em;
+    font-weight: 700;
+    color: #333; /* Dark text */
+}
+
+/* Table Header */
+thead th {
+    background-color: #076F72; /* Teal-green header */
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: none;
+}
+
+/* Table Rows */
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1; /* Light hover effect */
+}
+
+/* Input Fields Styling */
+input[type="text"], input[type="password"] {
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    outline: none;
+    font-size: 1em;
+    background-color: #f9f9f9;
+    color: #333;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    border-color: #076F72; /* Teal border on focus */
+    box-shadow: 0 0 15px rgba(7, 111, 114, 0.6); /* Teal glow */
+}
+
+/* Button Styling */
+input[type="button"] {
+    padding: 12px 25px;
+    margin: 10px;
+    font-size: 1em;
+    font-weight: 600;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    background-color: #076F72; /* Teal button */
+    color: #fff;
+    box-shadow: 0 8px 15px rgba(7, 111, 114, 0.5); /* Teal shadow */
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="button"]:hover {
+    background-color: #055e60; /* Darker teal */
+    box-shadow: 0 10px 20px rgba(7, 111, 114, 0.7); /* Stronger shadow */
+}
+
+/* Welcome Text Styling */
+.welcome-text {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #333;
+    text-shadow: none;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+    body {
+        padding: 1em;
+    }
+
+    .center {
+        width: 100%;
+    }
+
+    table, th, td {
+        font-size: 0.8em;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+}
